@@ -1,0 +1,9 @@
+from selenium import webdriver
+
+url = ('https://tiket.com', 'https://tokopedia.com', 'https://orangsiber.com', 'https://demoqa.com', 'https://automatetheboringstuff.com')
+driver = webdriver.Chrome()
+driver.minimize_window()
+
+for x in url:
+    driver.get(x)
+    print(driver.title)
